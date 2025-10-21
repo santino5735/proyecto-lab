@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* header */
+.logo-container {
+  text-align: center;
+  background-color: #CD853F ;
+}
+
+/* Cambia el color si la pantalla está entre 1024 y 2048 px */
+@media only screen and (min-width: 1024px) and (max-width: 2048px) {
+  .logo-container {
+    background-color: #D2691E;
+  }
+}
+
+/* Cambia el color si la pantalla es más chica (por ejemplo, celular) */
+@media only screen and (max-width: 768px) {
+  .logo-container {
+    background-color: #00CED1;
+  }
+}
+
+.logo-img {
+  width: 320px;
+  height: 200px;
+}
+
+.menu {
+  background-color: #2F4F4F;
+}
+
+.lista-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'BBH Sans Bogle', Verdana, Tahoma, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: clamp(32px, 8vw , 64px);
+}
+
+
+/* Bienvenida */
+.bienvenida {
+  background-color: #F0E68C;
+  font-family: Montserrat, Verdana, Tahoma, sans-serif;
+  font-size: clamp(32px, 8vw , 64px);
+  padding: 10%;
+}
+
+/* Productos */
+
+.productos {
+  font-family: Montserrat, Verdana, Tahoma, sans-serif;
+}
+
+.tit-prod {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.prod-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.prod-item {
+  border: 2px solid darkblue;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.item-tit {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.imagen-card {
+  width: 280px;
+}
+
+.precio {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.off {
+  color: green;
+}
+
+.descripcion {
+  width: 280px;
+  margin-bottom: 8px;
+}
+
+.botonera {
+  text-align: center;
+}
+
+.btn-agregar {
+  background-color: #2c408a;
+  color: antiquewhite;
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.btn-agregar:hover {
+  background-color: #041550;
+}
+
+
+.tit-contacto {
+  font-size: clamp(32px, 8vw, 64px);
+  text-align: center;
+  font-family: 'Bebas Neue', Verdana, Tahoma, sans-serif;
+}
+
+.subtit-contacto {
+  font-size: clamp(16px, 4vw, 24px);
+  text-align: center;
+  font-family: Roboto, Verdana, Tahoma, sans-serif;
+  margin: 16px;
+}
+
+.form-container {
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centra horizontalmente */
+  justify-content: center;
+  padding: 30px;
+  background-color: #f8f8f8; /* Fondo claro opcional */
+  text-align: center;
+}
+
+.formulario h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Hace el iframe adaptable al ancho de pantalla */
+.formulario iframe {
+  width: 100%;
+  max-width: 700px;  /* Tamaño máximo en pantallas grandes */
+  height: 900px;
+  border: none;
+  border-radius: 10px; /* Esquinas redondeadas opcionales */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto {
+  text-align: center;
+  background-color: #6a1b9a; /* tu color violeta */
+  color: white;
+  padding: 40px 20px;
+}
+
+.contacto iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 900px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+/* Ajusta la altura en pantallas pequeñas */
+@media (max-width: 768px) {
+  .formulario iframe {
+    height: 1000px;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #056c92;
+  color: azure;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding: 32px 0;
+  gap: 16px 0;
+}
+
+.footer-links {
+  width: 30%;
+  font-size: clamp(16px, 8vw, 32px);
+}
+
+.footer-ul {
+  list-style-type: none;
+  font-family: 'BBH Sans Bogle', Verdana, Tahoma, sans-serif;
+}
+
+.footer-mapa {
+ width: 40%;
+}
+
+.footer-redes {
+  width: 30%;
+}
+
+.footer-redes svg {
+  width: 80px;
+  fill: azure;
+}
+
+.copyright {
+  font-family: Roboto, sans-serif;
+  font-size: clamp(8px, 4vw, 16px);
+  text-align: center;
+  background-color: #000;
+  color: azure;
+}
+
+/* Medias Querys */
+
+@media only screen and (320px <= width <= 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu {
+    background-color: #00008B;
+  }
+
+}
+@media only screen and (768.1px <= width <= 1024px) {
+  .menu {
+    background-color: #556B2F;
+  }
+  .logo-img {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media only screen and (1024.1px <= width <= 2048px) {
+  .menu {
+    background-color: #DAA520;
+  }
+  .logo-img {
+    width: 800px;
+    height: 400px;
+  }
+}
+
