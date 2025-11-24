@@ -1,0 +1,24 @@
+[
+{ "id": 1, "nombre": "Destornillador Philips", "precio": 3490, "imagen": "img/destornillador.jpeg", "categoria": "manuales", "desc": "Destornillador punta Philips N°2." },
+{ "id": 2, "nombre": "Pinza Universal", "precio": 9990, "imagen": "img/pinza.jpeg", "categoria": "manuales", "desc": "Pinza universal de acero templado." },
+{ "id": 3, "nombre": "Cinta Métrica 5m", "precio": 5990, "imagen": "img/cinta.jpeg", "categoria": "medicion", "desc": "Cinta retráctil de 5 metros con freno." },
+{ "id": 4, "nombre": "Martillo Carpintero", "precio": 7999, "imagen": "img/martillo.jpeg", "categoria": "manuales", "desc": "Martillo clásico de carpintero." },
+{ "id": 5, "nombre": "Masa de Acero", "precio": 14999, "imagen": "img/masa.jpeg", "categoria": "manuales", "desc": "Masa de golpe 1kg reforzada." },
+{ "id": 6, "nombre": "Serrucho de Mano", "precio": 11990, "imagen": "img/cierra.jpeg", "categoria": "manuales", "desc": "Serrucho de acero endurecido." },
+{ "id": 7, "nombre": "Clavos x100", "precio": 1990, "imagen": "img/clavos.jpeg", "categoria": "construccion", "desc": "Clavos de acero templado x100." },
+{ "id": 8, "nombre": "Lubricante WD-40", "precio": 4990, "imagen": "img/w40.jpeg", "categoria": "otros", "desc": "Lubricante multipropósito WD-40." },
+{ "id": 9, "nombre": "Carrito de Herramientas", "precio": 25999, "imagen": "img/carrito.jpeg", "categoria": "almacenamiento", "desc": "Carrito para organizar herramientas." },
+
+{ "id": 10, "nombre": "Llave Francesa", "precio": 13990, "imagen": "img/pinza.jpeg", "categoria": "manuales", "desc": "Llave ajustable reforzada." },
+{ "id": 11, "nombre": "Corta Hierro", "precio": 15990, "imagen": "img/masa.jpeg", "categoria": "manuales", "desc": "Corta hierros industrial." },
+{ "id": 12, "nombre": "Alicate de Corte", "precio": 8990, "imagen": "img/pinza.jpeg", "categoria": "manuales", "desc": "Alicate profesional para cables." },
+{ "id": 13, "nombre": "Spray Protector", "precio": 3990, "imagen": "img/w40.jpeg", "categoria": "otros", "desc": "Spray protector multiuso." },
+{ "id": 14, "nombre": "Pala de Mano", "precio": 6990, "imagen": "img/cierra.jpeg", "categoria": "jardin", "desc": "Pala de jardinería." },
+{ "id": 15, "nombre": "Mini Martillo", "precio": 5990, "imagen": "img/martillo.jpeg", "categoria": "manuales", "desc": "Martillo chico multiuso." },
+
+{ "id": 16, "nombre": "Set de Clavos x200", "precio": 3490, "imagen": "img/clavos.jpeg", "categoria": "construccion", "desc": "Clavos variados." },
+{ "id": 17, "nombre": "Pico de Loro", "precio": 15990, "imagen": "img/pinza.jpeg", "categoria": "manuales", "desc": "Pinza Pico de Loro reforzada." },
+{ "id": 18, "nombre": "Spray Desoxidante", "precio": 5990, "imagen": "img/w40.jpeg", "categoria": "otros", "desc": "Elimina óxido y humedad." },
+{ "id": 19, "nombre": "Corta Caños", "precio": 21990, "imagen": "img/pinza.jpeg", "categoria": "manuales", "desc": "Herramienta para cortar caños PVC." },
+{ "id": 20, "nombre": "Mini Cinta Métrica", "precio": 2990, "imagen": "img/cinta.jpeg", "categoria": "medicion", "desc": "Cinta métrica pequeña 2m." }
+]

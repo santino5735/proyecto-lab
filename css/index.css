@@ -271,3 +271,97 @@
   }
 }
 
+/* ----- TARJETAS DE PRODUCTOS ----- */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.card .precio {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  background-color: #2c408a;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.card .btn:hover {
+  background-color: #041550;
+}
+
+/* --- Carrito flotante estilo Mercado Libre --- */
+.carrito-flotante {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.carrito-flotante img {
+  width: 35px;
+}
+
+.carrito-flotante span {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
+

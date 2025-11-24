@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito de Compras</title>
+
+<link rel="stylesheet" href="css/index.css">
+<style>
+    .carrito-box {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    font-family: Montserrat, sans-serif;
+    }
+
+    .item-carrito {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    }
+
+    .pagar-btn {
+    width: 100%;
+    padding: 15px;
+    background: #2c408a;
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 25px;
+    }
+
+    .pagar-btn:hover {
+    background: #041550;
+    }
+
+    .exito {
+    text-align: center;
+    font-size: 28px;
+    background: #4caf50;
+    padding: 20px;
+    color: white;
+    border-radius: 12px;
+    display: none;
+    margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="carrito-box">
+    <h1>Carrito de Compras</h1>
+
+    <div id="lista-carrito"></div>
+
+    <h2>Total: $<span id="total">0</span></h2>
+
+    <button class="pagar-btn" onclick="pagar()">Pagar</button>
+
+    <div class="exito" id="exito-msg">Pago exitoso, ¡disfrute su compra!</div>
+</div>
+
+<script>
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+function mostrarCarrito() {
+    const lista = document.getElementById("lista-carrito");
+    const totalSpan = document.getElementById("total");
+    let total = 0;
+
+    lista.innerHTML = "";
+
+    carrito.forEach((p, i) => {
+    total += p.precio;
+
+    lista.innerHTML += `
+        <div class="item-carrito">
+        <span>${p.nombre}</span>
+        <span>$${p.precio}</span>
+        </div>
+    `;
+    });
+
+    totalSpan.textContent = total;
+}
+
+function pagar() {
+    const msg = document.getElementById("exito-msg");
+    msg.style.display = "block";
+
+    // Vacía carrito después del pago
+    localStorage.removeItem("carrito");
+    carrito = [];
+}
+
+mostrarCarrito();
+</script>
+
+</body>
+</html>
